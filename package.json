@@ -1,0 +1,16 @@
+{
+  "name": "htmlvalidator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "4.27.1",
+    "webpack-cli": "3.1.2"
+  }
+}
