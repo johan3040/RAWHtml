@@ -1,5 +1,3 @@
-# RAWHTML
-
 ![RAWHTML logo](https://github.com/johan3040/RAWHtml/blob/master/src/img/raw.png)
 
 ### What is it?
