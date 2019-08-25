@@ -1,4 +1,4 @@
 module.exports = {
-    entry: './public/src/Main.js',
+    entry: './src/Main.js',
     output: {filename: './raw.min.js'}
 }
