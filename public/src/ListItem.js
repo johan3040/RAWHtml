@@ -20,14 +20,14 @@ export default class ListItem{
 
     createElements(){
         this.box = document.createElement("div");
-        this.box.setAttribute("class", "listItem");
+        this.box.setAttribute("class", "rawValidatorListItem");
         this.title = document.createElement("h4");
         this.message = document.createElement("p");
         this.rowInfo = document.createElement("p");
-        this.rowInfo.setAttribute("class", "validator__rowinfo");
+        this.rowInfo.setAttribute("class", "rawValidatorListItem__rowinfo");
         this.goToBox = document.createElement("div");
         this.goToBox.innerHTML = "&#11176;";
-        this.goToBox.setAttribute("class", "goToBox");
+        this.goToBox.setAttribute("class", "rawValidatorListItem__goToBox");
     }
 
     createErrorBox(){
@@ -42,9 +42,7 @@ export default class ListItem{
         this.message.innerText = this.data.message.replace(/\r?\n|\r/g, "↩");
         this.box.appendChild(this.title);
         
-        console.log(this.domNodeName === "SCRIPT")
         if(this.domNode !== undefined){
-            console.log("Inside with type " + this.domNodeName)
             if(!this.checkIfVisibleNode()){
                 this.goToBox = null;
             }else{

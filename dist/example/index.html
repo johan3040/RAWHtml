@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./../raw.min.js"></script>
+</head>
+
+<body>
+    <!--  
+        #
+        #
+        #
+        #
+        # This is a quick guide / description of the RAWHTML tool. Feel free to delete the folder "example" when using the tool in your own projekt.
+        #
+        #
+        #
+        #
+        #
+        #
+    -->
+    <div id="wrapper">
+        <h1>
+            Welcome to RAW
+        </h1>
+        <img src="./raw.png" />
+        <div class="example">
+            <h4>Give it a try</h4>
+            <p>There is a validation error on this page. See the RAWHTML tool in the upper right corner? Go a head and
+                validate the page to se the error.</p>
+        </div>
+        <div class="container">
+            <h3>What is it?🤔</h3>
+            <p>Lets admit it, validating yout HTML sucks...</p>
+            <p>RAWHTML is a lightweight tool for validating your code right here in the browser.</p>
+        </div>
+        <div class="container">
+            <h3>Who should use this?</h3>
+            <p>Beginners who write their own HTML code and want feedback wheather or not their code is valid without
+                having to use services on external websites.</p>
+            <p>If you are generating dynamic HTML content with JavaScript this validation service will <b>not</b> work.
+            </p>
+            <p>The code which will be validated is the main source code. (The code visible when pressing
+                <code>crtl/cmd + u</code>)</p>
+        </div>
+        <div class="container">
+            <h3>How to use</h3>
+            <p>Clone or download the project and import the folder <code>dist</code> in the root directory of your own
+                project. Then import <code>dist/raw.min.js</code> in all the HTML-files you want to have access to
+                RAWHTML.</p>
+            <div class="structureBox">
+                Example structure
+                <p class="structure">
+                    <code>/root</code>
+                    <code>&nbsp;&nbsp;/dist</code>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;/img</code>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.css</code>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.js</code>
+                    <code>&nbsp;&nbsp;/style</code>
+                    <code>&nbsp;&nbsp;index.html</code>
+                </p>
+            </div>
+            <p>From the example structure above, simply import the tool by adding this line of code in <code>index.html</code>:</p>
+            <p><code>&lt;script src="dist/raw.min.js"&gt;&lt;/script&gt;</code></p>
+        </div>
+        <div class="container">
+            <h3>How does it work?</h3>
+            <p>RAWHTML makes use of the open API from <a href="https://html5.validator.nu/">html5.validator.nu/</a>.
+                This is the service which will validate the code.</p>
+        </div>
+    </div>
+    <div class="socials">
+        <a href="https://github.com/johan3040">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.58 31.77">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: #221e1b;
+                            fill-rule: evenodd;
+                        }
+                    </style>
+                </defs>
+                <title>Resurs 1</title>
+                <g id="Lager_2" data-name="Lager 2">
+                    <g id="Lager_1-2" data-name="Lager 1">
+                        <path class="cls-1"
+                            d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.82.15,1.11-.36,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.36,4.36,0,0,0-1.81-2.39c-1.47-1,.12-1,.12-1a3.43,3.43,0,0,1,2.49,1.68,3.48,3.48,0,0,0,4.74,1.36,3.46,3.46,0,0,1,1-2.18c-3.62-.41-7.42-1.81-7.42-8a6.3,6.3,0,0,1,1.67-4.37,5.94,5.94,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.41,15.41,0,0,1,8.16,0c3.11-2.11,4.47-1.67,4.47-1.67A5.91,5.91,0,0,1,25,11.07a6.3,6.3,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.85,3.85,0,0,1,1.11,3c0,2.18,0,3.94,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z" />
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </div>
+</body>
+
+</html>

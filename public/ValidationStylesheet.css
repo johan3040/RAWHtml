@@ -201,7 +201,7 @@
 .validator__smallIcon{
     width: 50px;
     height: 20px;
-    background: url("./src/img/rawhtml_icon.png");
+    background: url("./img/rawhtml_icon.png");
     background-size: cover;
     position: absolute;
     left: calc(50% - 25px);
@@ -214,6 +214,7 @@
 
 .validatorListContainer{
     position: absolute;
+    color: black;
     height: 0;
 }
 
@@ -232,7 +233,7 @@
     display: inline-block;
 }
 
-.goToBox{
+.rawValidatorListItem__goToBox{
     position: relative;
     float: right;
     width: 20px;
@@ -245,7 +246,7 @@
     cursor: pointer;
 }
 
-.listItem{
+.rawValidatorListItem{
     width: 300px;
     min-height: 80px;
     border-bottom: 3px solid black;
@@ -269,24 +270,25 @@
     background-image: linear-gradient(to right, #fc7e68, #fd7063);
 }
 
-.listItem p{
+.rawValidatorListItem p{
     padding-right: 33px;
 }
 
-.validator__rowinfo{
+.rawValidatorListItem__rowinfo{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.listItem h4{
+.rawValidatorListItem h4{
     text-transform: capitalize;
 }
 
-.infoBox{
+.rawValidatorInfoBox{
     position: fixed;
     min-width: 300px;
     border: 2px solid black;
     background-color: white;
+    color: black;
     padding: 0;
     margin: 0;
 }

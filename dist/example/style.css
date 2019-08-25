@@ -1,0 +1,70 @@
+body{
+    width: 90vw;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+#wrapper{
+    margin-top: 4rem;
+}
+
+.example{
+    color: black;
+    background: linear-gradient(rgb(255, 255, 255), rgb(146, 146, 146));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: grid;
+    text-align: center;
+    padding: 2rem;
+    position: absolute;
+    right: 100px;
+    top: 400px;
+    box-shadow: 10px 10px 10px;
+}
+
+.container{
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.container p {
+    width: 80%;
+    line-height: 1.5rem;
+}
+
+.container b{
+    text-decoration: underline;
+}
+
+.container a{
+    color: white;
+}
+
+.structureBox{
+    border: 2px dashed black;
+    width: 150px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.structure code{
+    display: block;
+}
+
+.socials{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+svg{
+    width: 52px;
+    transform: translate(-1px, -1px);
+}

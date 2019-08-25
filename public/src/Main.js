@@ -30,16 +30,12 @@ class Main{
 
     setInitPosition(){
         const position = JSON.parse(window.localStorage.getItem("htmlValidatorPosition"));
-        if( position === null){
-            this.setNewPosition(0, 0);
-        }else{
-            this.setNewPosition(position.x, position.y);
-        }
+        position === null || position === undefined ? this.setNewPosition(0, 0) : this.setNewPosition(position.x, position.y);
     }
 
     loadCss(){
         var link = document.createElement( "link" );
-        link.href = "ValidationStyleSheet.css";
+        link.href = "validationStylesheet.css";
         link.type = "text/css";
         link.rel = "stylesheet";
         document.getElementsByTagName( "head" )[0].appendChild( link );
@@ -59,7 +55,6 @@ class Main{
         `;
         const btn = document.getElementById("rawHTMLContainer__button");
         btn.addEventListener("click", (e) => {
-            console.log("click")
             this.container.innerHTML = "";
             this.getDOM();
         });

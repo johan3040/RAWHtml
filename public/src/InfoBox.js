@@ -7,7 +7,7 @@ export default class InfoBox{
         this.description = description;
         this.id = new Date().getTime();
         this.container = document.createElement("div");
-        this.container.setAttribute("class", "infoBox");
+        this.container.setAttribute("class", "rawValidatorInfoBox");
         this.getExtraction(data.extract);
         this.addToDom();
         this.addListeners();
