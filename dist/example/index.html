@@ -25,53 +25,62 @@
         #
     -->
     <div id="wrapper">
-        <h1>
-            Welcome to RAW
-        </h1>
-        <img src="./raw.png" />
-        <div class="example">
-            <h4>Give it a try</h4>
-            <p>There is a validation error on this page. See the RAWHTML tool in the upper right corner? Go a head and
-                validate the page to se the error.</p>
-        </div>
-        <div class="container">
-            <h3>What is it?🤔</h3>
-            <p>Lets admit it, validating yout HTML sucks...</p>
-            <p>RAWHTML is a lightweight tool for validating your code right here in the browser.</p>
-        </div>
-        <div class="container">
-            <h3>Who should use this?</h3>
-            <p>Beginners who write their own HTML code and want feedback wheather or not their code is valid without
-                having to use services on external websites.</p>
-            <p>If you are generating dynamic HTML content with JavaScript this validation service will <b>not</b> work.
-            </p>
-            <p>The code which will be validated is the main source code. (The code visible when pressing
-                <code>crtl/cmd + u</code>)</p>
-        </div>
-        <div class="container">
-            <h3>How to use</h3>
-            <p>Clone or download the project and import the folder <code>dist</code> in the root directory of your own
-                project. Then import <code>dist/raw.min.js</code> in all the HTML-files you want to have access to
-                RAWHTML.</p>
-            <div class="structureBox">
-                Example structure
-                <p class="structure">
-                    <code>/root</code>
-                    <code>&nbsp;&nbsp;/dist</code>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;/img</code>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.css</code>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.js</code>
-                    <code>&nbsp;&nbsp;/style</code>
-                    <code>&nbsp;&nbsp;index.html</code>
-                </p>
+        <header>
+            <h1>
+                RAWHTML
+            </h1>
+            <img src="./raw.png" />
+        </header>
+        <div class="largeContainer">
+            <div class="container">
+                <h3>What is it?🤔</h3>
+                <p>Lets admit it, validating yout HTML sucks...</p>
+                <p>RAWHTML is a lightweight tool for validating your code right here in the browser.</p>
             </div>
-            <p>From the example structure above, simply import the tool by adding this line of code in <code>index.html</code>:</p>
-            <p><code>&lt;script src="dist/raw.min.js"&gt;&lt;/script&gt;</code></p>
-        </div>
-        <div class="container">
-            <h3>How does it work?</h3>
-            <p>RAWHTML makes use of the open API from <a href="https://html5.validator.nu/">html5.validator.nu/</a>.
-                This is the service which will validate the code.</p>
+            <div class="container">
+                <h3>Who should use this?</h3>
+                <p>Beginners who write their own HTML code and want feedback wheather or not their code is valid without
+                    having to visit external websites every...damn...time...</p>
+                <p>If you are generating dynamic HTML content with JavaScript this validation service will <b>not</b>
+                    work.
+                </p>
+                <p>The code which will be validated is the main source code. (The code visible when pressing
+                    <code>crtl/cmd + u</code>)</p>
+            </div>
+            <div class="container">
+                <h3>How to use</h3>
+                <p>Clone or download the project and import the folder <code>dist</code> in the root directory of your
+                    own
+                    project. Then import <code>dist/raw.min.js</code> in all the HTML-files you want to have access to
+                    RAWHTML.</p>
+                <div class="structureBox">
+                    Example structure
+                    <p class="structure">
+                        <code>/root</code>
+                        <code>&nbsp;&nbsp;/dist</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;/img</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.css</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;raw.min.js</code>
+                        <code>&nbsp;&nbsp;/style</code>
+                        <code>&nbsp;&nbsp;index.html</code>
+                    </p>
+                </div>
+                <p>From the example structure above, simply import the tool by adding this line of code in
+                    <code>index.html</code>:</p>
+                <p><code>&lt;script src="/dist/raw.min.js"&gt;&lt;/script&gt;</code></p>
+            </div>
+            <div class="container">
+                <h3>How does it work?</h3>
+                <p>RAWHTML makes use of the open API from <a href="https://html5.validator.nu/">html5.validator.nu/</a>.
+                    This is the service which will validate the code.</p>
+                <p>To make it all work you will need to have a <b><a
+                            href="https://www.maketecheasier.com/setup-local-web-server-all-platforms/">local web
+                            server</a></b> running.</p>
+                <div class="example">
+                    <h4>Give it a try</h4>
+                    <p>There is a validation error on this page. See the RAWHTML tool up there in the corner? Go ahead and validate the page to se the error.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="socials">

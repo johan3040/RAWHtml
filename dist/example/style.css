@@ -10,34 +10,48 @@ body{
     margin-top: 4rem;
 }
 
+header{
+    width: 100%;
+}
+
+h1{
+    display: none;
+}
+
+header img{
+    max-width: 60%;
+}
+
 .example{
     color: black;
     background: linear-gradient(rgb(255, 255, 255), rgb(146, 146, 146));
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: grid;
+    width: 90%;
+    border-radius: 20px;
     text-align: center;
-    padding: 2rem;
-    position: absolute;
-    right: 100px;
-    top: 400px;
+    padding: .4rem;
+    right: 24px;
+    top: 100px;
     box-shadow: 10px 10px 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.largeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .container{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     box-sizing: border-box;
-    width: 50%;
+    border-left: 1px solid white;
+    padding: .5rem;
 }
 
 .container p {
-    width: 80%;
     line-height: 1.5rem;
-}
-
-.container b{
-    text-decoration: underline;
 }
 
 .container a{
@@ -67,4 +81,25 @@ body{
 svg{
     width: 52px;
     transform: translate(-1px, -1px);
+}
+
+@media only screen and (max-width: 1100px){
+    .largeContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .largeContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .largeContainer{
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }
