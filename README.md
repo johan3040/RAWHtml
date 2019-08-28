@@ -1,4 +1,4 @@
-![RAWHTML logo](https://github.com/johan3040/RAWHtml/blob/master/src/img/raw.png)
+![RAWHTML logo](https://github.com/johan3040/RAWHtml/blob/master/dist/example/raw.png)
 
 ### What is it?
 
